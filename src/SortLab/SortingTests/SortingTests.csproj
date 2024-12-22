@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BumbleSort\BumbleSort.csproj" />
+    <ProjectReference Include="..\CoctailSort\CoctailSort.csproj" />
   </ItemGroup>
 
   <ItemGroup>
