@@ -8,10 +8,7 @@
             {
                 for (int j = 0; j < array.Length - i - 1; j++)
                 {
-                    if (array[j] > array[j + 1])
-                    {
 
-                    }
                 }
             }
         }
