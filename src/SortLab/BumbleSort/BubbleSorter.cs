@@ -10,7 +10,7 @@
                 {
                     if (array[j] > array[j + 1])
                     {
-                        Swap(array, j, j + 1);
+
                     }
                 }
             }
