@@ -32,12 +32,12 @@
                 swapped = false;
                 end--;
 
-                // Проход справа налево
+
                 for (int i = end - 1; i >= start; i--)
                 {
                     if (array[i] > array[i + 1])
                     {
-                        // Меняем элементы местами
+
                         int temp = array[i];
                         array[i] = array[i + 1];
                         array[i + 1] = temp;
