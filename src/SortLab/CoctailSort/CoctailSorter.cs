@@ -4,6 +4,7 @@
     {
         public static void Sort(int[] array)
         {
+
             bool swapped = true;
             int start = 0;
             int end = array.Length - 1;
