@@ -12,7 +12,7 @@
             {
                 swapped = false;
 
-                // Проход слева направо
+
                 for (int i = start; i < end; i++)
                 {
                     if (array[i] > array[i + 1])
