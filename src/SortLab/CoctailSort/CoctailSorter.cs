@@ -4,7 +4,6 @@
     {
         public static void Sort(int[] array)
         {
-
             bool swapped = true;
             int start = 0;
             int end = array.Length - 1;
@@ -12,7 +11,6 @@
             while (swapped)
             {
                 swapped = false;
-
 
                 for (int i = start; i < end; i++)
                 {
@@ -26,13 +24,11 @@
                     }
                 }
 
-
                 if (!swapped)
                     break;
 
                 swapped = false;
                 end--;
-
 
                 for (int i = end - 1; i >= start; i--)
                 {
