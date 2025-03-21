@@ -19,5 +19,14 @@
                 array[j + 1] = key;
             }
         }
+
+        static void PrintArray(int[] array)
+        {
+            foreach (int item in array)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+        }
     }
 }
