@@ -2,7 +2,6 @@
 {
     public class Class1
     {
-
         static void SelectionSort(int[] arr)
         {
             int n = arr.Length;
