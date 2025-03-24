@@ -5,7 +5,6 @@
         static void SelectionSort(int[] arr)
         {
 
-            }
         }
     }
 }
