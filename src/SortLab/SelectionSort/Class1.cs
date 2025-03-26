@@ -6,7 +6,7 @@
         {
             int num = arr.Length;
 
-            for (int i = 0; i < num - 1; i++)
+            for (int index = 0; i < num - 1; i++)
             {
                 int minIndex = i;
 
