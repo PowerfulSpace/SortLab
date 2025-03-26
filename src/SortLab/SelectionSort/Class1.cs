@@ -6,11 +6,11 @@
         {
             int num = arr.Length;
 
-            for (int index = 0; i < num - 1; i++)
+            for (int index = 0; index < num - 1; index++)
             {
-                int minIndex = i;
+                int minIndex = index;
 
-                for (int j = i + 1; j < num; j++)
+                for (int j = index + 1; j < num; j++)
                 {
                     if (arr[j] < arr[minIndex])
                     {
@@ -18,8 +18,8 @@
                     }
                 }
                 int temp = arr[minIndex];
-                arr[minIndex] = arr[i];
-                arr[i] = temp;
+                arr[minIndex] = arr[index];
+                arr[index] = temp;
             }
         }
     }
