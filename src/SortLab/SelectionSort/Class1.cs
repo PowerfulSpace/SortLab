@@ -4,13 +4,13 @@
     {
         static void SelectionSort(int[] arr)
         {
-            int num = arr.Length;
+            int n = arr.Length;
 
-            for (int index = 0; index < num - 1; index++)
+            for (int index = 0; index < n - 1; index++)
             {
                 int minIndex = index;
 
-                for (int j = index + 1; j < num; j++)
+                for (int j = index + 1; j < n; j++)
                 {
                     if (arr[j] < arr[minIndex])
                     {
