@@ -5,7 +5,6 @@
         static void ShellSort(int[] array)
         {
             int n = array.Length;
-
             // Начальный шаг (gap) - половина длины массива
             for (int gap = n / 2; gap > 0; gap /= 2)
             {
