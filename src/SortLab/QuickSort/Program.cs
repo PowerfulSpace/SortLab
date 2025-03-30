@@ -8,3 +8,13 @@ QuickSorter.Sort(array);
 
 
 Console.ReadLine();
+
+
+void Show(int[] array)
+{
+    foreach (int i in array)
+    {
+        Console.Write(i + " ");
+    }
+    Console.WriteLine();
+}
