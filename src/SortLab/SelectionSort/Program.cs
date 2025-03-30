@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace SelectionSort
-{
-    internal class Program
-    {
-    }
-}
+using SelectionSort;
+
+int[] array = { 12, 5, 18, 1, 20, 7, 11, 15, 3, 16, 9, 6, 14, 2, 10, 13, 8, 17, 4, 19 };
+
+
+SelectionSorter.Sort(array);
+
+
+Console.ReadLine();
