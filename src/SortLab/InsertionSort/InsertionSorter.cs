@@ -1,6 +1,6 @@
 ﻿namespace InsertionSort
 {
-    internal class InsertionSorter
+    public static class InsertionSorter
     {
     }
 }

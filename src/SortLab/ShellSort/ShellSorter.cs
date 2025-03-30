@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShellSort
 {
-    internal class ShellSorter
+    public static class ShellSorter
     {
     }
 }

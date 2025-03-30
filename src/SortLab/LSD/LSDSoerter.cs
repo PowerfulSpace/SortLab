@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LSD
+﻿namespace LSD
 {
-    internal class LSDSoerter
+    public static class LSDSoerter
     {
     }
 }

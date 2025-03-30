@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BinaryTreeSort
+﻿namespace BinaryTreeSort
 {
-    internal class BinaryTreeSorter
+    public static class BinaryTreeSorter
     {
     }
 }

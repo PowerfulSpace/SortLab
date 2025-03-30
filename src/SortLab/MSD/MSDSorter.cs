@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MSD
+﻿namespace MSD
 {
-    internal class MSDSorter
+    public static class MSDSorter
     {
     }
 }
