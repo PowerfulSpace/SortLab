@@ -4,25 +4,22 @@
     {
         public static void Sort(int[] array)
         {
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 1; i < array.Length; i++)
             {
-                for (int j = 0; j < i; j++)
+
+                int temp = array[i];
+                int j = i - 1;
+
+                while(j >= 0 && temp < array[j])
                 {
-                    if(array[j] > array[i])
-                    {
-                        Swap(array, j, i);
-                    }
+                    array[j + 1] = array[j];
+                    array[j] = temp;
+                    j--;
                 }
             }
 
         }
 
-        private static void Swap(int[] array, int x, int y)
-        {
-            int temp = array[x];
-            array[x] = array[y];
-            array[y] = temp;
-        }
     }
 }
 
