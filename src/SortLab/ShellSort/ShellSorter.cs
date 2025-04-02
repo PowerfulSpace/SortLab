@@ -24,7 +24,6 @@
 
                 gap = gap / 2;
             }
-
         }
 
         private static void Swap(int[] array, int x, int y)
