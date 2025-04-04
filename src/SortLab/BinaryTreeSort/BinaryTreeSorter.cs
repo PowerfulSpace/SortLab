@@ -11,13 +11,8 @@
                 root = Insert(root, value);
             }
 
-            List<T> sortedList = new List<T>();
-            InOrderTraversal(root, sortedList);
-
-            for (int i = 0; i < sortedList.Count; i++)
-            {
-                array[i] = sortedList[i];
-            }
+            int index = 0;
+            InOrderTraversal(root, array, ref index);
         }
         private static Node<T> Insert<T>(Node<T>? node, T value)
         {
@@ -36,13 +31,13 @@
             return node;
         }
 
-        private static void InOrderTraversal<T>(Node<T>? node, List<T> result)
+        private static void InOrderTraversal(Node<T>? node, T[] array, ref int index)
         {
             if (node == null) return;
 
-            InOrderTraversal(node.Left, result);
-            result.Add(node.value);
-            InOrderTraversal(node.Right, result);
+            InOrderTraversal(node.Left, array, ref index);
+            array[index++] = node.value;
+            InOrderTraversal(node.Right, array, ref index);
         }
     }
 
