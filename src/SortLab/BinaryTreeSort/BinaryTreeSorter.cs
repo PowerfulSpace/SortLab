@@ -18,8 +18,7 @@
         {
             if (node == null) return new Node(value);
 
-            var comparer = Comparer<int>.Default;
-            if (comparer.Compare(value, node.value) < 0)
+            if (value < node.value)
             {
                 node.Left = Insert(node.Left, value);
             }
@@ -39,26 +38,28 @@
             array[index++] = node.value;
             InOrderTraversal(node.Right, array, ref index);
         }
+
+
+        private class Node
+        {
+            public readonly int value;
+            public Node Left { get; set; }
+            public Node Right { get; set; }
+
+            public Node(int value)
+            {
+                this.value = value;
+                Left = null!;
+                Right = null!;
+            }
+
+            public override string ToString()
+            {
+                return value!.ToString()! ?? "null";
+            }
+        }
     }
 
-    class Node
-    {
-        public readonly int value;
-        public Node Left { get; set; }
-        public Node Right {get;set;}
-
-        public Node(int value)
-        {
-            this.value = value;
-            Left = null!;
-            Right = null!;
-        }
-
-        public override string ToString()
-        {
-            return value!.ToString()! ?? "null";
-        }
-    }
 }
 
 // создание бинарного дерева из элементов и обход его для сортировки.
