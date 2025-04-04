@@ -1,10 +1,10 @@
 ﻿namespace BinaryTreeSort
 {
-    public static class BinaryTreeSorter<T> where T: IComparable<T>
+    public static class BinaryTreeSorter
     {
-        public static void Sort(T[] array)
+        public static void Sort(int[] array)
         {
-            Node<T>? root = null;
+            Node? root = null;
 
             foreach (var value in array)
             {
@@ -14,11 +14,11 @@
             int index = 0;
             InOrderTraversal(root, array, ref index);
         }
-        private static Node<T> Insert<T>(Node<T>? node, T value)
+        private static Node Insert(Node? node, int value)
         {
-            if (node == null) return new Node<T>(value);
+            if (node == null) return new Node(value);
 
-            var comparer = Comparer<T>.Default;
+            var comparer = Comparer<int>.Default;
             if (comparer.Compare(value, node.value) < 0)
             {
                 node.Left = Insert(node.Left, value);
@@ -31,7 +31,7 @@
             return node;
         }
 
-        private static void InOrderTraversal(Node<T>? node, T[] array, ref int index)
+        private static void InOrderTraversal(Node? node, int[] array, ref int index)
         {
             if (node == null) return;
 
@@ -41,13 +41,13 @@
         }
     }
 
-    class Node<T>
+    class Node
     {
-        public readonly T value;
-        public Node<T> Left { get; set; }
-        public Node<T> Right {get;set;}
+        public readonly int value;
+        public Node Left { get; set; }
+        public Node Right {get;set;}
 
-        public Node(T value)
+        public Node(int value)
         {
             this.value = value;
             Left = null!;
