@@ -5,12 +5,24 @@
         public static void Sort(int[] array)
         {
         }
+    }
 
-        private static void Swap(int[] array, int x, int y)
+    class Node<T>
+    {
+        public readonly T value;
+        public Node<T> Left { get; set; }
+        public Node<T> Right {get;set;}
+
+        public Node(T value)
         {
-            int temp = array[x];
-            array[x] = array[y];
-            array[y] = temp;
+            this.value = value;
+            Left = null!;
+            Right = null!;
+        }
+
+        public override string ToString()
+        {
+            return value!.ToString()! ?? "null";
         }
     }
 }
