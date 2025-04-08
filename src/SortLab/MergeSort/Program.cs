@@ -7,6 +7,7 @@ Show(array);
 
 MergeSorter.Sort(array);
 
+Show(array);
 
 Console.ReadLine();
 
