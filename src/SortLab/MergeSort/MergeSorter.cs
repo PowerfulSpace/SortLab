@@ -12,7 +12,6 @@
             }
         }
 
-        // Разделение массива на части
         private static List<int> Separation(List<int> list)
         {
             if (list.Count <= 1) return list;
