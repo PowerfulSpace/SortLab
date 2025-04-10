@@ -1,6 +1,6 @@
 ﻿namespace LSD
 {
-    public static class LSDSoerter
+    public static class LSDSorter
     {
         public static void Sort(int[] array)
         {
@@ -14,3 +14,6 @@
         }
     }
 }
+
+
+//сортировка элементов по разрядам, начиная с младших (LSD).
