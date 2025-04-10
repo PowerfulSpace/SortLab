@@ -21,19 +21,19 @@
         private static int Partition(int[] array, int low, int high)
         {
             int pivot = array[high];
-            int i = low - 1;
+            int i = low;
 
             for (int j = low; j < high; j++)
             {
                 if (array[j] < pivot)
                 {
-                    i++;
                     Swap(array, i, j);
+                    i++;
                 }
             }
 
-            Swap(array, i + 1, high);
-            return i + 1;
+            Swap(array, i, high);
+            return i;
         }
 
         private static void Swap(int[] array, int x, int y)
